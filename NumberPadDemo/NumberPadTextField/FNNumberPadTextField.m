@@ -153,5 +153,11 @@
     return YES;
 }
 
+- (BOOL)respondsToSelector:(SEL)aSelector {
+  if (aSelector == @selector(customOverlayContainer)) {
+    return NO;
+  }
+  return [super respondsToSelector:aSelector];
+}
 
 @end
