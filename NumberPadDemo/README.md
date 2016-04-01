@@ -1,23 +1,11 @@
-//
-//  ViewController.m
-//  NumberPadDemo
-//
-//  Created by fly on 16/3/28.
-//  Copyright © 2016年 Fly. All rights reserved.
-//
+# NumberPadTextField
+输入数字限制的textField 
+主要是为了在一些需要输入数字的地方，由于一些第三方输入法，可以切换输入状态
+目前支持
+1.默认的输入方式
+2.纯无符整形
+3.浮点类型
 
-#import "ViewController.h"
-#import "FNNumberPadTextField.h"
-
-@interface ViewController ()<UITextFieldDelegate>
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
     FNNumberPadTextField *textField1 = [[FNNumberPadTextField alloc] initWithFrame:CGRectMake(20, 40, 300, 36)];
     textField1.borderStyle = UITextBorderStyleRoundedRect;
     textField1.placeholder = @"正常类型的TextField";
@@ -34,13 +22,4 @@
 
     textField3.borderStyle = UITextBorderStyleRoundedRect;
     textField3.placeholder = @"可接收小数点的TextField";
-//    textField3.delegate = self;
     [self.view addSubview:textField3];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-@end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B400A81CAA143D007E6747 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 04B400A71CAA143D007E6747 /* README.md */; };
 		04CCF1CB1CA9192F00D628BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF1CA1CA9192F00D628BB /* main.m */; };
 		04CCF1CE1CA9192F00D628BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF1CD1CA9192F00D628BB /* AppDelegate.m */; };
 		04CCF1D11CA9192F00D628BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CCF1D01CA9192F00D628BB /* ViewController.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04B400A71CAA143D007E6747 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04CCF1C61CA9192F00D628BB /* NumberPadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberPadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CCF1CA1CA9192F00D628BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CCF1CC1CA9192F00D628BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		04CCF1C91CA9192F00D628BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04B400A71CAA143D007E6747 /* README.md */,
 				04CCF1CA1CA9192F00D628BB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -128,6 +131,7 @@
 				TargetAttributes = {
 					04CCF1C51CA9192F00D628BB = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7J79ASE48B;
 					};
 				};
 			};
@@ -167,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B400A81CAA143D007E6747 /* README.md in Sources */,
 				04CCF1D11CA9192F00D628BB /* ViewController.m in Sources */,
 				04CCF1CE1CA9192F00D628BB /* AppDelegate.m in Sources */,
 				04CCF1E61CA91B1200D628BB /* FNNumberPadTextField.m in Sources */,
@@ -281,7 +286,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NumberPadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moxian.NumberPadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,7 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NumberPadDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moxian.NumberPadDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

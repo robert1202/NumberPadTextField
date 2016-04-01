@@ -62,6 +62,7 @@
     if (delegate != self) {
         self.swapDelegate = delegate;
     }
+    
 }
 
 - (FNTextFieldLimit *)limit {
