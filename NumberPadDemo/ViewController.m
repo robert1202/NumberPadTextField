@@ -30,7 +30,7 @@
     [self.view addSubview:textField2];
     
     FNNumberPadTextField *textField3 = [[FNNumberPadTextField alloc] initWithFrame:CGRectMake(20, CGRectGetMaxY(textField2.frame) + 10, 300, 36)];
-    textField3.limitType = FNTextFieldLimitTypePureFloat;
+    textField3.limitType = FNTextFieldLimitTypeFloat;
 
     textField3.borderStyle = UITextBorderStyleRoundedRect;
     textField3.placeholder = @"可接收小数点的TextField";

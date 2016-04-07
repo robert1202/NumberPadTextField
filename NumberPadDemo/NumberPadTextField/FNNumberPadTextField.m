@@ -89,7 +89,7 @@
     _limitType = limitType;
     self.limit.limitType = limitType;
     switch (limitType) {
-        case FNTextFieldLimitTypePureFloat: {
+        case FNTextFieldLimitTypeFloat: {
             self.keyboardType = UIKeyboardTypeDecimalPad;
             break;
         }

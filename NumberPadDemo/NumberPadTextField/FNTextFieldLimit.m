@@ -70,7 +70,7 @@
             newRegular = [NSString stringWithFormat:@"^([1-9]{1})(\\d{0,%@})$",@(MAX(self.totalInputLength - 1, 0))];
             break;
         }
-        case FNTextFieldLimitTypePureFloat: {
+        case FNTextFieldLimitTypeFloat: {
             newRegular = [NSString stringWithFormat:@"^(\\d{0,%@}+\\.?+\\d{0,%@})$",@(MAX(self.totalInputLength - 1, 0)),@(self.decimalPointLength)];
             break;
         }

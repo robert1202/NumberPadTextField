@@ -20,14 +20,13 @@
  */
 @property (nonatomic, assign) NSUInteger totalInputLength;
 
-@property(nonatomic, assign) NSUInteger decimalPointLength;
+/**
+ *  可以输入的小数点的位数，在limitType为FNTextFieldLimitTypeFloat是有效果
+ */
+@property (nonatomic, assign) NSUInteger decimalPointLength;
 
 
 @property (nonatomic, assign) FNTextFieldLimitType limitType;
 
-/**
- *  除了可以输入数字外的特殊字符,必须使是NSString类型
- */
-@property (nonatomic, copy  ) NSSet<NSString   *> *specialCharacters;
 
 @end

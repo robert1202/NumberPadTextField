@@ -11,8 +11,8 @@
 
 typedef NS_ENUM(NSUInteger, FNTextFieldLimitType) {
     FNTextFieldLimitTypeNone,
-    FNTextFieldLimitTypePureUInt,
-    FNTextFieldLimitTypePureFloat,
+    FNTextFieldLimitTypePureUInt,//无符整数
+    FNTextFieldLimitTypeFloat,//浮点数
 };
 
 
