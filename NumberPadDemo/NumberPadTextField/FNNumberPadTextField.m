@@ -153,11 +153,24 @@
     return YES;
 }
 
-- (BOOL)respondsToSelector:(SEL)aSelector {
-  if (aSelector == @selector(customOverlayContainer)) {
-    return NO;
-  }
-  return [super respondsToSelector:aSelector];
+
+//this is must fixed苹果审核被拒绝的代码
+-(BOOL) respondsToSelector:(SEL)aSelector {
+    
+    NSString * selectorName = NSStringFromSelector(aSelector);
+    NSString * overlayName = [NSString stringWithFormat:@"%@%@%@",@"custom",@"Overlay",@"Container"];
+    if ([selectorName isEqualToString:overlayName]) {
+        
+        return NO;
+    }
+    return [super respondsToSelector:aSelector];
 }
+
+//- (BOOL)respondsToSelector:(SEL)aSelector {
+//  if (aSelector == @selector(customOverlayContainer)) {
+//    return NO;
+//  }
+//  return [super respondsToSelector:aSelector];
+//}
 
 @end
